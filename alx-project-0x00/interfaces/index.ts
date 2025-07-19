@@ -7,5 +7,11 @@ export interface ButtonProps {
   className?: string;
 }
 
+export interface ButtonProps {
+  title: string;
+  styles?: string;
+}
+
+
 
 
