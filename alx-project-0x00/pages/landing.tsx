@@ -1,35 +1,18 @@
-
+import React from "react";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
 
 const Landing: React.FC = () => {
   return (
-    <div className="p-10 flex flex-col gap-6">
-      <h1 className="text-xl font-extralight">Landing Page</h1>
-
+    <div className="p-6 space-y-6">
+      <h1 className="text-2xl font-semibold">Landing Page</h1>
       <Card />
 
       <div className="space-y-4">
-        {/* Small buttons */}
-        <div className="flex gap-4">
-          <Button title="Small Rounded-sm" className="text-sm rounded-sm" />
-          <Button title="Small Rounded-md" className="text-sm rounded-md" />
-          <Button title="Small Rounded-full" className="text-sm rounded-full" />
-        </div>
-
-        {/* Medium buttons */}
-        <div className="flex gap-4">
-          <Button title="Medium Rounded-sm" className="text-base rounded-sm" />
-          <Button title="Medium Rounded-md" className="text-base rounded-md" />
-          <Button title="Medium Rounded-full" className="text-base rounded-full" />
-        </div>
-
-        {/* Large buttons */}
-        <div className="flex gap-4">
-          <Button title="Large Rounded-sm" className="text-lg rounded-sm" />
-          <Button title="Large Rounded-md" className="text-lg rounded-md" />
-          <Button title="Large Rounded-full" className="text-lg rounded-full" />
-        </div>
+        <Button title="Small - Rounded-sm" className="text-sm py-1 px-3 rounded-sm bg-blue-500 text-white" />
+        <Button title="Medium - Rounded-md" className="text-base py-2 px-4 rounded-md bg-green-500 text-white" />
+        <Button title="Large - Rounded-full" className="text-lg py-3 px-6 rounded-full bg-red-500 text-white" />
+        <Button title="Custom - Rounded-lg" className="text-base py-2 px-5 rounded-lg bg-purple-500 text-white" />
       </div>
     </div>
   );
